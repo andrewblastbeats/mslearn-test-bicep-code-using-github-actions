@@ -9,7 +9,7 @@ on:
 permissions:
   id-token: write
   contents: read
-# comment
+# comment update
 env:
   AZURE_RESOURCEGROUP_NAME: ToyWebsiteTest
   ENVIRONMENT_TYPE: Test
