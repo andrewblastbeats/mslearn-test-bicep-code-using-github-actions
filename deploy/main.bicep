@@ -22,6 +22,8 @@ var applicationInsightsName = 'toywebsite'
 var storageAccountName = 'mystorage${resourceNameSuffix}'
 
 // Define the SKUs for each component based on the environment type.
+// via a config map to avoid duplication and make it easier to manage.
+// a config map makes it easier to manage different configurations for different environments.
 var environmentConfigurationMap = {
   Production: {
     appServicePlan: {
